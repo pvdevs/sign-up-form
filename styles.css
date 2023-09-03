@@ -3,7 +3,6 @@
 body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    background: #db3434;
     color: #181818;
 }
 
@@ -13,6 +12,15 @@ html, body, h1, h2, h4, p {
     font-size: 100%;
 	vertical-align: baseline;
 }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 
 
 .main {
@@ -41,11 +49,15 @@ img{
     position: relative;
 }
 
-.right{
+.right, .container{
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-self: center;
+}
+
+.container{
+    gap: 48px;
 }
 
 .header {
@@ -61,7 +73,8 @@ img{
 
 .header h4 {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color: #929292;
 }
 
 .quote {   
@@ -102,6 +115,36 @@ img{
 }
 
 input {
-    height: 32px;
+    height: 24px;
+    border: 1px solid #E5E7EB;
     border-radius: 4px;
+    padding: 8px 12px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-self: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.bottom button{
+    width:100%;
+    display:block;
+    background-color: #101727;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
 }
